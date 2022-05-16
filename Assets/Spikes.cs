@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Spikes : MonoBehaviour
 {
+    private DeathScript deathScript;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,9 @@ public class Spikes : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
+            deathScript = other.gameObject.GetComponent<DeathScript>();
+            deathScript.isDead = true;
         }
     }
 }

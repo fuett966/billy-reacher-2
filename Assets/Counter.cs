@@ -9,18 +9,44 @@ public class Counter : MonoBehaviour
     [HideInInspector] public float count;
     public Text text;
     [HideInInspector]public int maxCountArtefacts;
-    // Start is called before the first frame update
+    public float timeToChangeTextToFindExit;
+    private float timer;
+    private bool isTimer;
+    private bool isUpdateText;
+    public int thisSceneNumber;
 
     void Start()
     {
         count = 0;
         maxCountArtefacts = artefactArray.Length;
         text.text = "Найдите все древние мечи : 0 из " + maxCountArtefacts;
+        timer = timeToChangeTextToFindExit;
+        isUpdateText = true;
+        isTimer = false;
     }
 
     private void Update()
     {
-        text.text = "Найдите все древние мечи : " + count + " из " + maxCountArtefacts;
+        if (text.text == "Найдите все древние мечи : " + maxCountArtefacts + " из " + maxCountArtefacts && !isTimer)
+        {
+            text.color = new Color(0, 255, 0);
+            isTimer = true;
+        }
+        else if(isTimer)
+        {
+            timer =- Time.deltaTime;
+            if (timer <= 0)
+            {
+                text.text = "Найдите выход";
+                text.color = new Color(255, 255, 255);
+                isUpdateText = false;
+            }
+        }
+        else if(isUpdateText)
+        {
+            text.text = "Найдите все древние мечи : " + count + " из " + maxCountArtefacts;
+        }
+
     }
 
 

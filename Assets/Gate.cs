@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Gate : MonoBehaviour
 {
     public bool allIsCollected;
     public Counter counter;
-    public Text text;
+    public int nextSceneNumber;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,15 @@ public class Gate : MonoBehaviour
     {
         if(counter.count == counter.maxCountArtefacts)
         {
-            //next level
+            allIsCollected = true;
+        }
+
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Player" && allIsCollected)
+        {
+            SceneManager.LoadScene(nextSceneNumber);
         }
     }
 }
