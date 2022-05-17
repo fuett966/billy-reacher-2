@@ -15,12 +15,13 @@ public class Counter : MonoBehaviour
     {
         count = 0;
         maxCountArtefacts = artefactArray.Length;
-        text.text = "Найдите все древние мечи : 0 из " + maxCountArtefacts;
+        text.text = "Соберите все проклятые клинки мести: из " + maxCountArtefacts;
     }
 
     private void Update()
     {
-        text.text = "Найдите все древние мечи : " + count + " из " + maxCountArtefacts;
+        
+        text.text = "Соберите все проклятые клинки мести: " + count + " из " + maxCountArtefacts;
     }
 
 
