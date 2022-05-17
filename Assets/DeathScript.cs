@@ -11,13 +11,19 @@ public class DeathScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        isDead = false;
         counter = FindObjectOfType<Counter>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(isDead)
+        {
+            //audio death
+            //Destroy(gameObject);
+            RestartLevel();
+        }
     }
     public void RestartLevel()
     {
