@@ -7,10 +7,13 @@ public class ArtefactScript : MonoBehaviour
 {
     public bool isEnter;
     public Counter counter;
+    [HideInInspector]public AudioManager audioManager;
+    public AudioClip audioClip;
 
     private void Start()
     {
-        isEnter = false; 
+        isEnter = false;
+        audioManager = GetComponent<AudioManager>();
     }
     private void Update()
     {
@@ -20,8 +23,9 @@ public class ArtefactScript : MonoBehaviour
     {
         if (isEnter)
         {
+            //audioManager.PlayAudio(audioClip);
             counter.count += 1;
-            counter.text.text = "Найдите все древние мечи : " + counter.count + " из " + counter.maxCountArtefacts;
+            counter.text.text = "Соберите все проклятые клинки мести : " + counter.count + " из " + counter.maxCountArtefacts;
             Destroy(gameObject);
         }
     }

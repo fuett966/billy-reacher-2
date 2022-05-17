@@ -3329,8 +3329,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 553, y: -105}
-  m_SizeDelta: {x: 1040.3488, y: 119.1285}
+  m_AnchoredPosition: {x: 954.03046, y: -89.30127}
+  m_SizeDelta: {x: 1842.4098, y: 87.7311}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &457290959
 MonoBehaviour:
@@ -4727,6 +4727,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEnter: 0
   counter: {fileID: 1139453293}
+  audioManager: {fileID: 0}
+  audioClip: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -12075,6 +12077,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEnter: 0
   counter: {fileID: 1139453293}
+  audioManager: {fileID: 0}
+  audioClip: {fileID: 0}
 --- !u!65 &1934055189
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13200,6 +13204,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEnter: 0
   counter: {fileID: 1139453293}
+  audioManager: {fileID: 0}
+  audioClip: {fileID: 0}
 --- !u!65 &2114324554
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17972,6 +17978,10 @@ PrefabInstance:
       propertyPath: counter
       value: 
       objectReference: {fileID: 1139453293}
+    - target: {fileID: 5084428330461275153, guid: 385e1ea472f49074ab0a9733483a468d, type: 3}
+      propertyPath: nextSceneNumber
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5084428330461514318, guid: 385e1ea472f49074ab0a9733483a468d, type: 3}
       propertyPath: m_RootOrder
       value: 1

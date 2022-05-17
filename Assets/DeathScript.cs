@@ -7,7 +7,8 @@ public class DeathScript : MonoBehaviour
 {
     [HideInInspector]public bool isDead;
     public Counter counter;
-    
+
+
     // Start is called before the first frame update
     void Start()
     {

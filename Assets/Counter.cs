@@ -19,7 +19,7 @@ public class Counter : MonoBehaviour
     {
         count = 0;
         maxCountArtefacts = artefactArray.Length;
-        text.text = "Найдите все древние мечи : 0 из " + maxCountArtefacts;
+        text.text = "Соберите все проклятые клинки мести : 0 из " + maxCountArtefacts;
         timer = timeToChangeTextToFindExit;
         isUpdateText = true;
         isTimer = false;
@@ -27,7 +27,7 @@ public class Counter : MonoBehaviour
 
     private void Update()
     {
-        if (text.text == "Найдите все древние мечи : " + maxCountArtefacts + " из " + maxCountArtefacts && !isTimer)
+        if (text.text == "Соберите все проклятые клинки мести : " + maxCountArtefacts + " из " + maxCountArtefacts && !isTimer)
         {
             text.color = new Color(0, 255, 0);
             isTimer = true;
@@ -44,7 +44,7 @@ public class Counter : MonoBehaviour
         }
         else if(isUpdateText)
         {
-            text.text = "Найдите все древние мечи : " + count + " из " + maxCountArtefacts;
+            text.text = "Соберите все проклятые клинки мести : " + count + " из " + maxCountArtefacts;
         }
 
     }
