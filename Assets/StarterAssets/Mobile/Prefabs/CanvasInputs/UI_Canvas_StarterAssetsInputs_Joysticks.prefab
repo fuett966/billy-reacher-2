@@ -348,6 +348,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI_Virtual_Joystick_Move
       objectReference: {fileID: 0}
+    - target: {fileID: 3199668076469712369, guid: 6eb08bfc0fd869c47b796c42ada099da, type: 3}
+      propertyPath: m_Color.b
+      value: 0.14653791
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199668076469712369, guid: 6eb08bfc0fd869c47b796c42ada099da, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6594334
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199668076469712369, guid: 6eb08bfc0fd869c47b796c42ada099da, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8396226
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6eb08bfc0fd869c47b796c42ada099da, type: 3}
 --- !u!224 &4700314800559521240 stripped
@@ -372,7 +384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 191938513, guid: 6eb08bfc0fd869c47b796c42ada099da, type: 3}
       propertyPath: magnitudeMultiplier
-      value: 3
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 191938513, guid: 6eb08bfc0fd869c47b796c42ada099da, type: 3}
       propertyPath: joystickOutputEvent.m_PersistentCalls.m_Calls.Array.size
@@ -501,6 +513,18 @@ PrefabInstance:
     - target: {fileID: 1423390416140222447, guid: 6eb08bfc0fd869c47b796c42ada099da, type: 3}
       propertyPath: m_Name
       value: UI_Virtual_Joystick_Look
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199668076469712369, guid: 6eb08bfc0fd869c47b796c42ada099da, type: 3}
+      propertyPath: m_Color.b
+      value: 0.119927004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199668076469712369, guid: 6eb08bfc0fd869c47b796c42ada099da, type: 3}
+      propertyPath: m_Color.g
+      value: 0.64972675
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199668076469712369, guid: 6eb08bfc0fd869c47b796c42ada099da, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7264151
       objectReference: {fileID: 0}
     - target: {fileID: 3199668076469712371, guid: 6eb08bfc0fd869c47b796c42ada099da, type: 3}
       propertyPath: m_IsActive
