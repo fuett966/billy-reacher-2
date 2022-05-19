@@ -8,7 +8,7 @@ public class Buttons : MonoBehaviour
     public GameObject MenuPanel;
     public GameObject Ui_JoyStick;
     public GameObject LevelsMenu;
-    // Start is called before the first frame update
+    public GameObject Authors;
     void Start()
     {
         
@@ -38,6 +38,14 @@ public class Buttons : MonoBehaviour
     public void levelMenu()
     {
         LevelsMenu.active = !LevelsMenu.active;
+    }
+    public void OpenAuthors()
+    {
+        Authors.active = true;
+    }
+    public void CloseAuthors()
+    {
+        Authors.active = false;
     }
 
     // Update is called once per frame
