@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,10 +7,6 @@ public class Buttons : MonoBehaviour
     public GameObject Ui_JoyStick;
     public GameObject LevelsMenu;
     public GameObject Authors;
-    void Start()
-    {
-        
-    }
     public void StartGame()
     {
         SceneManager.LoadScene(1);
@@ -48,9 +42,4 @@ public class Buttons : MonoBehaviour
         Authors.active = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

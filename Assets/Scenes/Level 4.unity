@@ -7514,6 +7514,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI_Canvas_StarterAssetsInputs_Joysticks
       objectReference: {fileID: 0}
+    - target: {fileID: 8890774966862588244, guid: 2f7f3dde7ae722a4aafffe20691ad702, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 3232679412994198728}
     - target: {fileID: 9139165769254981991, guid: 2f7f3dde7ae722a4aafffe20691ad702, type: 3}
       propertyPath: m_Color.b
       value: 0.18729973
@@ -8567,6 +8571,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1208477878974349401, guid: 97caa3da65448f74885a2a9ad2c9c767, type: 3}
   m_PrefabInstance: {fileID: 1267529624}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1267529626 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1309987504206322471, guid: 97caa3da65448f74885a2a9ad2c9c767, type: 3}
+  m_PrefabInstance: {fileID: 1267529624}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1267637087
 GameObject:
   m_ObjectHideFlags: 0
@@ -10517,17 +10532,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1299669950307129217, guid: 217cd4e7d83608142a57277232f0fb2d, type: 3}
   m_PrefabInstance: {fileID: 963530025}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1548122329 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2252259503867642106, guid: 97caa3da65448f74885a2a9ad2c9c767, type: 3}
-  m_PrefabInstance: {fileID: 1267529624}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1550831651 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1299669950307129217, guid: 217cd4e7d83608142a57277232f0fb2d, type: 3}
@@ -13475,12 +13479,12 @@ Transform:
   - {fileID: 927411385}
   - {fileID: 1311175108}
   - {fileID: 126897349}
+  - {fileID: 1078179350}
   - {fileID: 407647057}
   - {fileID: 2077068027}
-  - {fileID: 1022883264}
   - {fileID: 580453285}
+  - {fileID: 1022883264}
   - {fileID: 1425796539}
-  - {fileID: 1078179350}
   - {fileID: 155594007}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -20001,7 +20005,7 @@ PrefabInstance:
     - target: {fileID: 9026800435979855302, guid: 8727513e83062de46b56a10b79e7a37e, type: 3}
       propertyPath: text
       value: 
-      objectReference: {fileID: 1548122329}
+      objectReference: {fileID: 1267529626}
     - target: {fileID: 9026800435979855302, guid: 8727513e83062de46b56a10b79e7a37e, type: 3}
       propertyPath: thisSceneNumber
       value: 4

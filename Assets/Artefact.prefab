@@ -62,7 +62,8 @@ MonoBehaviour:
   isEnter: 0
   counter: {fileID: 0}
   sound: {fileID: 8300000, guid: ac00a32dbc0c3dc4a86c720842d926a1, type: 3}
-  audio: {fileID: 0}
+  newAudio: {fileID: 0}
+  sword: {fileID: 4325328658143619364}
 --- !u!82 &822573103190141327
 AudioSource:
   m_ObjectHideFlags: 0
@@ -204,6 +205,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7be452843358bc4ba98018362ecfe43, type: 3}
+--- !u!1 &4325328658143619364 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: c7be452843358bc4ba98018362ecfe43, type: 3}
+  m_PrefabInstance: {fileID: 4325328658143522694}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4325328658143130884 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: c7be452843358bc4ba98018362ecfe43, type: 3}

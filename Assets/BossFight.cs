@@ -41,11 +41,6 @@ public class BossFight : MonoBehaviour
         questionNumber = 0;
     }
 
-    void Update()
-    {
-
-    }
-
     public void TriggerQueston()
     {
         switch (questionNumber)

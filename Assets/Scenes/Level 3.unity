@@ -1182,6 +1182,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1208477878974349401, guid: 97caa3da65448f74885a2a9ad2c9c767, type: 3}
   m_PrefabInstance: {fileID: 193677981}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &193677983 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1309987504206322471, guid: 97caa3da65448f74885a2a9ad2c9c767, type: 3}
+  m_PrefabInstance: {fileID: 193677981}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &216606041 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1299669950307129217, guid: 217cd4e7d83608142a57277232f0fb2d, type: 3}
@@ -1496,17 +1507,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 217cd4e7d83608142a57277232f0fb2d, type: 3}
---- !u!114 &255521490 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2252259503867642106, guid: 97caa3da65448f74885a2a9ad2c9c767, type: 3}
-  m_PrefabInstance: {fileID: 193677981}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &256455186
 GameObject:
   m_ObjectHideFlags: 0
@@ -6551,6 +6551,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI_Canvas_StarterAssetsInputs_Joysticks
       objectReference: {fileID: 0}
+    - target: {fileID: 8890774966862588244, guid: 2f7f3dde7ae722a4aafffe20691ad702, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 3232679412994198728}
     - target: {fileID: 9139165769254981991, guid: 2f7f3dde7ae722a4aafffe20691ad702, type: 3}
       propertyPath: m_Color.b
       value: 0.18729973
@@ -17580,7 +17584,7 @@ PrefabInstance:
     - target: {fileID: 9026800435979855302, guid: 8727513e83062de46b56a10b79e7a37e, type: 3}
       propertyPath: text
       value: 
-      objectReference: {fileID: 255521490}
+      objectReference: {fileID: 193677983}
     - target: {fileID: 9026800435979855302, guid: 8727513e83062de46b56a10b79e7a37e, type: 3}
       propertyPath: thisSceneNumber
       value: 3

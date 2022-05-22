@@ -27,9 +27,6 @@ public class Spikes : MonoBehaviour
         {
             GameManager.game.lose.enabled = true;
             StartCoroutine(WaitToDeath());
-            //Destroy(other.gameObject);
-            //deathScript = other.gameObject.GetComponent<DeathScript>();
-            //deathScript.isDead = true;
         }
     }
     private IEnumerator WaitToDeath()
