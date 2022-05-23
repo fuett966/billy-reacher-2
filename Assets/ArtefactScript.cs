@@ -19,8 +19,10 @@ public class ArtefactScript : MonoBehaviour
             newAudio.clip = sound;
             newAudio.Play();
             counter.count += 1;
-            counter.text.text = "Соберите все проклятые клинки мести : " + counter.count + " из " + counter.maxCountArtefacts;
-
+            if (!counter.isBoss)
+            {
+                counter.text.text = "Соберите все проклятые клинки мести : " + counter.count + " из " + counter.maxCountArtefacts;
+            }
             Destroy(sword);
             Destroy(gameObject.GetComponent<BoxCollider>());
         }

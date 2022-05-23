@@ -21,7 +21,7 @@ public class BossFight : MonoBehaviour
     public TextMesh blueTEXT;
 
     public Text text;
-    public GameObject textTimer;
+    public GameObject artefact;
 
     bool inRed;
     bool inBlue;
@@ -254,11 +254,12 @@ public class BossFight : MonoBehaviour
                 }
                 else if (greenPlatform.GetComponent<BossPlatformScript>().isHere)
                 {
-                    text.text = "Поздравляю с победой...";
+                    text.text = "Поздравляю с победой...Забирай меч и ступай дальше.";
                     redTEXT.text = "";
                     greenTEXT.text = "";
                     blueTEXT.text = "";
                     questionNumber = 11;
+                    artefact.active = true;
 
                 }
                 else if (bluePlatform.GetComponent<BossPlatformScript>().isHere)
