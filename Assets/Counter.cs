@@ -13,6 +13,7 @@ public class Counter : MonoBehaviour
     private bool isUpdateText;
     public int thisSceneNumber;
     public bool isBoss;
+    public bool isFinal;
 
     void Start()
     {
@@ -31,7 +32,11 @@ public class Counter : MonoBehaviour
 
     private void Update()
     {
-        if (!isBoss)
+        if (isFinal)
+        {
+            text.text = "Бегите!";
+        }
+        else if (!isBoss)
         {
             if (text.text == "Соберите все проклятые клинки мести : " + maxCountArtefacts + " из " + maxCountArtefacts && !isTimer)
             {
@@ -53,9 +58,6 @@ public class Counter : MonoBehaviour
                 text.text = "Соберите все проклятые клинки мести : " + count + " из " + maxCountArtefacts;
             }
         }
-        else
-        {
-
-        }
+        
     }
 }

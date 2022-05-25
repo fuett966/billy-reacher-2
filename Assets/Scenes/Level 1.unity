@@ -2520,6 +2520,8 @@ MonoBehaviour:
   maxCountArtefacts: 0
   timeToChangeTextToFindExit: 0
   thisSceneNumber: 1
+  isBoss: 0
+  isFinal: 0
 --- !u!4 &1139453294
 Transform:
   m_ObjectHideFlags: 0
@@ -5318,10 +5320,6 @@ PrefabInstance:
     - target: {fileID: 2252259503506430818, guid: 97caa3da65448f74885a2a9ad2c9c767, type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 2252259503506430818, guid: 97caa3da65448f74885a2a9ad2c9c767, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2252259503506430830, guid: 97caa3da65448f74885a2a9ad2c9c767, type: 3}
       propertyPath: m_Pivot.x
