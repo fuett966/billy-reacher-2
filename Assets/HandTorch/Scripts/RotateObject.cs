@@ -9,7 +9,7 @@ public class RotateObject : MonoBehaviour {
 	public bool isRotating;
 	
 
-	void Update () {
+	void FixedUpdate() {
 		if (Input.GetButton ("Fire1")) {
 			isRotating = true;
 			//`	HideMouse ();

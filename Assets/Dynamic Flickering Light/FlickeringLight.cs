@@ -115,7 +115,7 @@ public class FlickeringLight : MonoBehaviour {
 
 
 
-    void Update()
+    void FixedUpdate()
     {
 
         if (deltaSum >= 0.02f)

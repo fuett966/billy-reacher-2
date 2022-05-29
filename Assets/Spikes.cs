@@ -8,17 +8,10 @@ public class Spikes : MonoBehaviour
     private AudioClip audio;
     private AudioSource source;
     private DeathScript deathScript;
-    // Start is called before the first frame update
     void Start()
     {
         source = gameObject.GetComponent<AudioSource>();
         source.clip = audio;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void OnTriggerEnter(Collider other)

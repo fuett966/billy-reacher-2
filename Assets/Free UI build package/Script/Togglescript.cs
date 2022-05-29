@@ -16,7 +16,7 @@ public class Togglescript : MonoBehaviour {
     public GameObject Slider;
 
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (toggle.isOn)
         {

@@ -28,7 +28,7 @@ public class FlickLight : MonoBehaviour
     [Tooltip("The speed smooth of the movement of light")]
     public float speedSmoothShadow = 50f;
 
-    // Start is called before the first frame update
+    // Start is called before the first frame FixedUpdate
     void Start()
     {
         if (lig == null)
@@ -40,8 +40,8 @@ public class FlickLight : MonoBehaviour
         StartCoroutine(SmoothFLick());
     }
 
-    // Update is called once per frame
-    void Update()
+    // FixedUpdate is called once per frame
+    void FixedUpdate()
     {
         if (lig == null)
             return;

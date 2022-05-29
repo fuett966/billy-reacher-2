@@ -8,14 +8,7 @@ public class ToggleLight : MonoBehaviour
     public GameObject Spot1ight;
 
     public bool onOff;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (onOff)
         {

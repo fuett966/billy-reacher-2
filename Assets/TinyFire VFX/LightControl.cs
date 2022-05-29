@@ -6,7 +6,7 @@ public class LightControl : MonoBehaviour {
 
     float nRand = 0;
 	
-	void Update ()
+	void FixedUpdate()
     {
         nRand = Random.RandomRange(4f, 5f);
         this.transform.GetComponent<Light>().intensity = nRand;

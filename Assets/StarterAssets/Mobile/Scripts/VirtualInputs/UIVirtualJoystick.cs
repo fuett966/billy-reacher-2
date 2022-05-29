@@ -12,8 +12,8 @@ public class UIVirtualJoystick : MonoBehaviour, IPointerDownHandler, IDragHandle
     public RectTransform handleRect;
 
     [Header("Settings")]
-    public float joystickRange = 50f;
-    public float magnitudeMultiplier = 1f;
+    public float joystickRange;
+    public float magnitudeMultiplier;
     public bool invertXOutputValue;
     public bool invertYOutputValue;
 
@@ -22,29 +22,20 @@ public class UIVirtualJoystick : MonoBehaviour, IPointerDownHandler, IDragHandle
 
     void Start()
     {
+        PlayerPrefs.SetFloat("sensCam", 5);
+        PlayerPrefs.SetFloat("sensMove", 5);
         SetSens();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         SetSens();
     }
 
     public void SetSens()
     {
-        if (PlayerPrefs.HasKey("sensMove"))
-        {
-            magnitudeMultiplier = PlayerPrefs.GetFloat("sensMove");
-        }
-        else if (PlayerPrefs.HasKey("sensCam"))
-        {
-            magnitudeMultiplier = PlayerPrefs.GetFloat("sensCam");
-        }
-        else
-        {
-            PlayerPrefs.SetFloat("sensCam", 25);
-            PlayerPrefs.SetFloat("sensMove", 25);
-        }
+        magnitudeMultiplier = PlayerPrefs.GetFloat("sensMove");
+        magnitudeMultiplier = PlayerPrefs.GetFloat("sensCam");
         SetupHandle();
     }
 
@@ -72,7 +63,7 @@ public class UIVirtualJoystick : MonoBehaviour, IPointerDownHandler, IDragHandle
 
         Vector2 outputPosition = ApplyInversionFilter(position);
 
-        OutputPointerEventValue(outputPosition * magnitudeMultiplier);
+        OutputPointerEventValue(outputPosition * magnitudeMultiplier / 20);
 
         if (handleRect)
         {
