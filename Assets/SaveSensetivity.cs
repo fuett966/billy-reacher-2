@@ -4,18 +4,31 @@ using UnityEngine.UI;
 public class SaveSensetivity : MonoBehaviour
 {
     [SerializeField]
-    private Slider slider;
+    private Slider sliderCam;
+    [SerializeField]
+    private Slider sliderMove;
     private void Start()
     {
-        Load();
+        LoadCam();
+        LoadMove();
     }
-    public void Save()
+    public void SaveCam()
     {
-        PlayerPrefs.SetFloat("sens", slider.value);
+        PlayerPrefs.SetFloat("sensCam", sliderCam.value);
     }
 
-    public void Load()
+    public void SaveMove()
     {
-        slider.value = PlayerPrefs.GetFloat("sens");
+        PlayerPrefs.SetFloat("sens", sliderMove.value);
+    }
+
+    public void LoadCam()
+    {
+        sliderCam.value = PlayerPrefs.GetFloat("sensCam");
+    }
+
+    public void LoadMove()
+    {
+        sliderMove.value = PlayerPrefs.GetFloat("sensMove");
     }
 }

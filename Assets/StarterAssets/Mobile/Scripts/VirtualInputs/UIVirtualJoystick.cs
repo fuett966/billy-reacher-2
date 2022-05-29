@@ -32,13 +32,18 @@ public class UIVirtualJoystick : MonoBehaviour, IPointerDownHandler, IDragHandle
 
     public void SetSens()
     {
-        if (PlayerPrefs.HasKey("sens"))
+        if (PlayerPrefs.HasKey("sensMove"))
         {
-            magnitudeMultiplier = PlayerPrefs.GetFloat("sens");
+            magnitudeMultiplier = PlayerPrefs.GetFloat("sensMove");
+        }
+        else if (PlayerPrefs.HasKey("sensCam"))
+        {
+            magnitudeMultiplier = PlayerPrefs.GetFloat("sensCam");
         }
         else
         {
-            PlayerPrefs.SetFloat("sens", 25);
+            PlayerPrefs.SetFloat("sensCam", 25);
+            PlayerPrefs.SetFloat("sensMove", 25);
         }
         SetupHandle();
     }

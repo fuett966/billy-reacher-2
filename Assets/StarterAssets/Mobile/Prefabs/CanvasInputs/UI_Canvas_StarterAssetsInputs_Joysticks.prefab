@@ -360,7 +360,8 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.8396226
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2976711156707159110, guid: 6eb08bfc0fd869c47b796c42ada099da, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6eb08bfc0fd869c47b796c42ada099da, type: 3}
 --- !u!224 &4700314800559521240 stripped
 RectTransform:
@@ -530,7 +531,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2976711156707159110, guid: 6eb08bfc0fd869c47b796c42ada099da, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6eb08bfc0fd869c47b796c42ada099da, type: 3}
 --- !u!224 &8160084292953347161 stripped
 RectTransform:
